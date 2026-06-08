@@ -1,0 +1,104 @@
+@startuml 系统结构图
+title 个人云盘系统结构图（MVP）
+
+skinparam componentStyle rectangle
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam defaultFontName Microsoft YaHei
+
+actor "用户" as User
+
+rectangle "个人云盘系统" {
+
+  package "表现层" {
+    [Web 前端] as Web
+    [分享访问页] as SharePage
+  }
+
+  package "应用层" {
+    [认证模块\n- 注册\n- 登录] as Auth
+    [文件管理模块\n- 文件列表\n- 新建文件夹\n- 重命名] as FileMgmt
+    [上传模块\n- 10GB 校验\n- 分片上传\n- 进度展示] as Upload
+    [下载模块] as Download
+    [回收站模块\n- 删除\n- 恢复\n- 彻底删除] as Recycle
+    [分享模块\n- 创建分享链接\n- 访问分享链接] as Share
+    [预览模块\n- 图片\n- 视频\n- 音频\n- PDF\n- 文本] as Preview
+    [容量统计模块\n- 总容量\n- 已使用\n- 剩余容量\n- 使用百分比] as Capacity
+  }
+
+  package "领域与基础设施层" {
+    [用户服务] as UserService
+    [文件元数据服务] as MetaService
+    [分享服务] as ShareService
+    [存储服务] as StorageService
+    [磁盘监控服务] as DiskService
+    [预览处理服务] as PreviewService
+
+    database "用户数据" as UserDB
+    database "文件元数据" as MetaDB
+    folder "服务器文件存储" as FileStorage
+    collections "回收站存储区" as TrashStorage
+  }
+}
+
+User --> Web
+User --> SharePage
+
+Web --> Auth
+Web --> FileMgmt
+Web --> Upload
+Web --> Download
+Web --> Recycle
+Web --> Share
+Web --> Preview
+Web --> Capacity
+
+SharePage --> Share
+SharePage --> Preview
+SharePage --> Download
+
+Auth --> UserService
+FileMgmt --> MetaService
+Upload --> StorageService
+Upload --> MetaService
+Upload --> Capacity
+Download --> StorageService
+Download --> MetaService
+Recycle --> MetaService
+Recycle --> StorageService
+Share --> ShareService
+Share --> MetaService
+Preview --> PreviewService
+Preview --> MetaService
+Preview --> StorageService
+Capacity --> DiskService
+
+UserService --> UserDB
+MetaService --> MetaDB
+ShareService --> MetaDB
+StorageService --> FileStorage
+Recycle --> TrashStorage
+DiskService --> FileStorage
+PreviewService --> FileStorage
+
+note right of Capacity
+仅统计单服务器磁盘容量，
+不包含用户套餐、多服务器、
+对象存储容量聚合。
+end note
+
+note bottom of Upload
+前端与后端都必须校验单文件 <= 10GB；
+大文件上传支持分片与进度反馈。
+end note
+
+note bottom of Share
+MVP 支持创建分享链接与访问分享链接。
+end note
+
+note bottom of Recycle
+删除采用“先入回收站”，
+支持恢复与彻底删除。
+end note
+
+@enduml
