@@ -1,0 +1,267 @@
+@startuml 系统类图
+title 个人云盘系统类图（MVP）
+
+skinparam shadowing false
+skinparam defaultFontName Microsoft YaHei
+skinparam classAttributeIconSize 0
+
+package "客户端" {
+  class WebClient {
+    +login()
+    +browseFiles()
+    +uploadFile()
+    +deleteToRecycleBin()
+    +viewCapacity()
+  }
+
+  class WindowsClient {
+    +login()
+    +browseFiles()
+    +uploadFile()
+    +deleteToRecycleBin()
+    +viewCapacity()
+  }
+}
+
+package "接口层" {
+  class AuthController {
+    +register(cmd: RegisterCommand)
+    +login(cmd: LoginCommand)
+  }
+
+  class FileController {
+    +listFiles(userId: Long, parentId: Long)
+    +createFolder(userId: Long, name: String, parentId: Long)
+    +rename(itemId: Long, newName: String)
+  }
+
+  class UploadController {
+    +initUpload(cmd: InitUploadCommand)
+    +uploadChunk(sessionId: String, chunkNo: int)
+    +completeUpload(sessionId: String)
+  }
+
+  class RecycleBinController {
+    +delete(itemId: Long)
+    +restore(recordId: Long)
+    +purge(recordId: Long)
+  }
+
+  class CapacityController {
+    +getStorageStats()
+  }
+}
+
+package "应用层" {
+  class AuthService {
+    +register(cmd: RegisterCommand): User
+    +login(cmd: LoginCommand): AuthToken
+  }
+
+  class FileService {
+    +listFiles(userId: Long, parentId: Long): List<FileItem>
+    +createFolder(userId: Long, name: String, parentId: Long): FolderItem
+    +rename(itemId: Long, newName: String)
+  }
+
+  class UploadService {
+    +initUpload(cmd: InitUploadCommand): UploadSession
+    +saveChunk(sessionId: String, chunkNo: int, size: long)
+    +completeUpload(sessionId: String): FileItem
+    +validateFileSize(size: long)
+  }
+
+  class RecycleBinService {
+    +moveToRecycleBin(itemId: Long): RecycleRecord
+    +restore(recordId: Long)
+    +purge(recordId: Long)
+  }
+
+  class CapacityService {
+    +getStorageStats(): StorageStats
+    +ensureEnoughSpace(requiredSize: long)
+  }
+}
+
+package "领域模型" {
+  class User {
+    +id: Long
+    +username: String
+    +passwordHash: String
+    +status: UserStatus
+    +createdAt: DateTime
+  }
+
+  abstract class FileItem {
+    +id: Long
+    +ownerId: Long
+    +name: String
+    +parentId: Long
+    +path: String
+    +deleted: boolean
+    +createdAt: DateTime
+    +rename(newName: String)
+    +moveToRecycleBin()
+  }
+
+  class FolderItem {
+    +childCount: int
+  }
+
+  class FileObject {
+    +storageKey: String
+    +size: long
+    +mimeType: String
+    +chunkCount: int
+    +checksum: String
+  }
+
+  class UploadSession {
+    +sessionId: String
+    +userId: Long
+    +fileName: String
+    +fileSize: long
+    +chunkSize: long
+    +uploadedChunks: int
+    +status: UploadStatus
+    +isCompleted(): boolean
+  }
+
+  class RecycleRecord {
+    +id: Long
+    +itemId: Long
+    +originalPath: String
+    +deletedAt: DateTime
+    +deletedBy: Long
+  }
+
+  class StorageStats {
+    +totalBytes: long
+    +usedBytes: long
+    +freeBytes: long
+    +usedPercent: decimal
+  }
+
+  class AuthToken {
+    +accessToken: String
+    +expiresAt: DateTime
+  }
+
+  class RegisterCommand {
+    +username: String
+    +password: String
+  }
+
+  class LoginCommand {
+    +username: String
+    +password: String
+  }
+
+  class InitUploadCommand {
+    +userId: Long
+    +parentId: Long
+    +fileName: String
+    +fileSize: long
+    +chunkSize: long
+  }
+
+  enum UserStatus {
+    ACTIVE
+    DISABLED
+  }
+
+  enum UploadStatus {
+    INIT
+    UPLOADING
+    COMPLETED
+    FAILED
+  }
+}
+
+package "基础设施层" {
+  interface UserRepository {
+    +save(user: User): User
+    +findByUsername(username: String): User
+    +findById(id: Long): User
+  }
+
+  interface FileRepository {
+    +findByParent(userId: Long, parentId: Long): List<FileItem>
+    +save(item: FileItem): FileItem
+    +findById(id: Long): FileItem
+  }
+
+  interface UploadSessionRepository {
+    +save(session: UploadSession): UploadSession
+    +findBySessionId(sessionId: String): UploadSession
+  }
+
+  interface RecycleRecordRepository {
+    +save(record: RecycleRecord): RecycleRecord
+    +findById(id: Long): RecycleRecord
+    +delete(id: Long)
+  }
+
+  interface StorageGateway {
+    +saveChunk(sessionId: String, chunkNo: int, data: Binary)
+    +mergeChunks(sessionId: String): String
+    +moveToRecycleBin(storageKey: String)
+    +delete(storageKey: String)
+  }
+
+  interface DiskMonitor {
+    +getStorageStats(): StorageStats
+  }
+}
+
+FolderItem --|> FileItem
+FileObject --|> FileItem
+
+WebClient --> AuthController
+WebClient --> FileController
+WebClient --> UploadController
+WebClient --> RecycleBinController
+WebClient --> CapacityController
+
+WindowsClient --> AuthController
+WindowsClient --> FileController
+WindowsClient --> UploadController
+WindowsClient --> RecycleBinController
+WindowsClient --> CapacityController
+
+AuthController --> AuthService
+FileController --> FileService
+UploadController --> UploadService
+RecycleBinController --> RecycleBinService
+CapacityController --> CapacityService
+
+AuthService --> UserRepository
+FileService --> FileRepository
+UploadService --> UploadSessionRepository
+UploadService --> FileRepository
+UploadService --> StorageGateway
+UploadService --> CapacityService
+RecycleBinService --> RecycleRecordRepository
+RecycleBinService --> FileRepository
+RecycleBinService --> StorageGateway
+CapacityService --> DiskMonitor
+
+FileItem "1" --> "0..*" FileItem : contains
+RecycleRecord --> FileItem
+UploadService --> UploadSession
+AuthService --> User
+AuthService --> AuthToken
+CapacityService --> StorageStats
+
+note right of UploadService
+单文件大小必须 <= 10GB。
+上传前检查服务器剩余空间，
+并支持分片上传。
+end note
+
+note right of CapacityService
+容量统计基于单服务器磁盘，
+不涉及用户套餐或多服务器聚合。
+end note
+
+@enduml
