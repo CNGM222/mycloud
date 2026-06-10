@@ -1,0 +1,152 @@
+@startuml
+title MyCloud 服务端类图
+
+skinparam classAttributeIconSize 0
+
+package "服务端（集成前后端业务）" {
+  class AuthController {
+    +login(request)
+    +register(request)
+    +logout(token)
+  }
+
+  class FileController {
+    +upload(request)
+    +download(fileId, userId)
+    +preview(fileId, userId)
+    +manage(request)
+  }
+
+  class ShareController {
+    +createShare(request)
+    +getShare(shareId)
+    +cancelShare(shareId)
+  }
+
+  class AuthService {
+    +authenticate(account, password)
+    +registerUser(userInfo)
+    +destroySession(token)
+  }
+
+  class FileService {
+    +saveFile(fileData, userId)
+    +getFileStream(fileId, userId)
+    +buildPreview(fileId, userId)
+    +manageFile(command, userId)
+  }
+
+  class ShareService {
+    +generateShare(fileId, policy, userId)
+    +loadShare(shareId)
+    +disableShare(shareId, userId)
+  }
+
+  class PermissionService {
+    +checkUserAccess(userId, fileId) : boolean
+    +checkPreviewable(fileId) : boolean
+    +checkSharePermission(userId, fileId) : boolean
+  }
+
+  class StorageService {
+    +store(fileData, path)
+    +read(path)
+    +delete(path)
+  }
+
+  class LogService {
+    +recordLogin(userId)
+    +recordUpload(fileId, userId)
+    +recordDownload(fileId, userId)
+    +recordShare(fileId, userId)
+    +recordManage(action, fileId, userId)
+  }
+
+  class UserRepository {
+    +findByAccount(account)
+    +save(user)
+  }
+
+  class FileRepository {
+    +findById(fileId)
+    +save(file)
+    +update(file)
+    +delete(fileId)
+  }
+
+  class ShareRepository {
+    +findById(shareId)
+    +save(share)
+    +update(share)
+  }
+
+  class SessionRepository {
+    +save(session)
+    +findByToken(token)
+    +delete(token)
+  }
+
+  class User {
+    +userId : String
+    +account : String
+    +password : String
+    +userName : String
+    +usedSpace : long
+    +totalSpace : long
+  }
+
+  class FileEntity {
+    +fileId : String
+    +ownerId : String
+    +fileName : String
+    +filePath : String
+    +fileSize : long
+    +fileType : String
+    +status : String
+  }
+
+  class ShareRecord {
+    +shareId : String
+    +fileId : String
+    +creatorId : String
+    +shareLink : String
+    +expireTime : Date
+    +status : String
+  }
+
+  class Session {
+    +token : String
+    +userId : String
+    +expireTime : Date
+  }
+}
+
+AuthController --> AuthService
+FileController --> FileService
+ShareController --> ShareService
+
+AuthService --> UserRepository
+AuthService --> SessionRepository
+AuthService --> LogService
+
+FileService --> FileRepository
+FileService --> StorageService
+FileService --> PermissionService
+FileService --> LogService
+
+ShareService --> ShareRepository
+ShareService --> FileRepository
+ShareService --> PermissionService
+ShareService --> LogService
+
+UserRepository --> User
+FileRepository --> FileEntity
+ShareRepository --> ShareRecord
+SessionRepository --> Session
+
+FileEntity --> User
+ShareRecord --> FileEntity
+ShareRecord --> User
+Session --> User
+
+@enduml

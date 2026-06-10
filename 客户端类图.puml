@@ -1,0 +1,131 @@
+@startuml
+title MyCloud 客户端类图
+
+skinparam classAttributeIconSize 0
+
+package "客户端" {
+  class ClientApp {
+    +start()
+    +route()
+  }
+
+  class LoginPage {
+    +showLoginForm()
+    +showRegisterForm()
+    +submitLogin()
+    +submitRegister()
+  }
+
+  class HomePage {
+    +showFileList()
+    +showSpaceUsage()
+    +navigateModule()
+  }
+
+  class UploadPage {
+    +chooseFile()
+    +submitUpload()
+    +showUploadResult()
+  }
+
+  class PreviewPage {
+    +loadPreview()
+    +renderPreview()
+  }
+
+  class SharePage {
+    +configureShare()
+    +submitShare()
+    +showShareLink()
+  }
+
+  class FileManagerPage {
+    +createFolder()
+    +renameFile()
+    +moveFile()
+    +deleteFile()
+  }
+
+  class AuthController {
+    +login(credentials)
+    +register(userInfo)
+    +logout()
+  }
+
+  class FileController {
+    +loadFiles()
+    +upload(file)
+    +download(fileId)
+    +preview(fileId)
+    +manage(command)
+  }
+
+  class ShareController {
+    +createShare(fileId, policy)
+    +loadShareResult()
+  }
+
+  class ApiClient {
+    +get(url)
+    +post(url, body)
+    +put(url, body)
+    +delete(url)
+  }
+
+  class SessionStore {
+    -token : String
+    -currentUser : UserViewModel
+    +saveSession()
+    +clearSession()
+    +isLoggedIn() : boolean
+  }
+
+  class UserViewModel {
+    +userId : String
+    +userName : String
+    +usedSpace : long
+    +totalSpace : long
+  }
+
+  class FileViewModel {
+    +fileId : String
+    +fileName : String
+    +fileSize : long
+    +fileType : String
+    +shareStatus : String
+  }
+
+  class ShareViewModel {
+    +shareId : String
+    +shareLink : String
+    +expireTime : Date
+  }
+}
+
+ClientApp --> LoginPage
+ClientApp --> HomePage
+
+LoginPage --> AuthController
+HomePage --> FileController
+HomePage --> ShareController
+UploadPage --> FileController
+PreviewPage --> FileController
+SharePage --> ShareController
+FileManagerPage --> FileController
+
+AuthController --> ApiClient
+AuthController --> SessionStore
+FileController --> ApiClient
+FileController --> SessionStore
+ShareController --> ApiClient
+ShareController --> SessionStore
+
+HomePage ..> UserViewModel
+HomePage ..> FileViewModel
+PreviewPage ..> FileViewModel
+SharePage ..> ShareViewModel
+SessionStore --> UserViewModel
+FileController ..> FileViewModel
+ShareController ..> ShareViewModel
+
+@enduml
