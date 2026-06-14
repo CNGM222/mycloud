@@ -5,4 +5,11 @@
     <groupId>com.mycloud</groupId>
     <artifactId>mycloud-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>3.5.10</version>
+        </dependency>
+    </dependencies>
 </project>

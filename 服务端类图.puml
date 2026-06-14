@@ -17,12 +17,6 @@ package "服务端（集成前后端业务）" {
     +manage(request)
   }
 
-  class ShareController {
-    +createShare(request)
-    +getShare(shareId)
-    +cancelShare(shareId)
-  }
-
   class AuthService {
     +authenticate(account, password)
     +registerUser(userInfo)
@@ -34,12 +28,6 @@ package "服务端（集成前后端业务）" {
     +getFileStream(fileId, userId)
     +buildPreview(fileId, userId)
     +manageFile(command, userId)
-  }
-
-  class ShareService {
-    +generateShare(fileId, policy, userId)
-    +loadShare(shareId)
-    +disableShare(shareId, userId)
   }
 
   class PermissionService {
@@ -74,11 +62,6 @@ package "服务端（集成前后端业务）" {
     +delete(fileId)
   }
 
-  class ShareRepository {
-    +findById(shareId)
-    +save(share)
-    +update(share)
-  }
 
   class SessionRepository {
     +save(session)
@@ -105,15 +88,6 @@ package "服务端（集成前后端业务）" {
     +status : String
   }
 
-  class ShareRecord {
-    +shareId : String
-    +fileId : String
-    +creatorId : String
-    +shareLink : String
-    +expireTime : Date
-    +status : String
-  }
-
   class Session {
     +token : String
     +userId : String
@@ -123,7 +97,6 @@ package "服务端（集成前后端业务）" {
 
 AuthController --> AuthService
 FileController --> FileService
-ShareController --> ShareService
 
 AuthService --> UserRepository
 AuthService --> SessionRepository
@@ -134,19 +107,12 @@ FileService --> StorageService
 FileService --> PermissionService
 FileService --> LogService
 
-ShareService --> ShareRepository
-ShareService --> FileRepository
-ShareService --> PermissionService
-ShareService --> LogService
 
 UserRepository --> User
 FileRepository --> FileEntity
-ShareRepository --> ShareRecord
 SessionRepository --> Session
 
 FileEntity --> User
-ShareRecord --> FileEntity
-ShareRecord --> User
 Session --> User
 
 @enduml

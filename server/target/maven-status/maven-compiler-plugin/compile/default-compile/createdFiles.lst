@@ -1,0 +1,14 @@
+com\mycloud\controller\FileController.class
+com\mycloud\MyCloudApplication.class
+com\mycloud\controller\FileController$ManageRequest.class
+com\mycloud\controller\FileController$UploadRequest.class
+com\mycloud\entity\result.class
+com\mycloud\repository\UserRepository.class
+com\mycloud\entity\User.class
+com\mycloud\service\AuthService.class
+com\mycloud\config\SecurityConfig.class
+com\mycloud\service\FileService.class
+com\mycloud\controller\AuthController$LoginRequest.class
+com\mycloud\entity\FileEntity.class
+com\mycloud\controller\AuthController.class
+com\mycloud\repository\FileRepository.class
