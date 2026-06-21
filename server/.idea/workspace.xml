@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0288b8b1-d07c-4680-8c0d-876be2474fd5" name="更改" comment="框架">
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/mycloud.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/DataSourceConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/FileController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/FolderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/SearchController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/TaskController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/FileContentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/FileDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/Impl/JdbcFileContentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/Impl/JdbcFileDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/Impl/JdbcOperationLogDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/Impl/JdbcTaskDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/Impl/JdbcUserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/OperationLogDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/TaskDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exception/BusinessException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exception/ErrorCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/config/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/config/DataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/FolderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/FolderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/FileContentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/FileContentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/FileDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/FileDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/Impl/JdbcFileContentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/Impl/JdbcFileContentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/Impl/JdbcFileDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/Impl/JdbcFileDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/Impl/JdbcOperationLogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/Impl/JdbcOperationLogDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/Impl/JdbcTaskDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/Impl/JdbcTaskDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/Impl/JdbcUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/Impl/JdbcUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/OperationLogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/OperationLogDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/TaskDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/TaskDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/exception/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/exception/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/exception/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/LoginResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/LoginResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/PageRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/PageRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/PageResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/RegisterResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/RegisterResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/vo/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/vo/ApiResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/security/CurrentUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/security/CurrentUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/security/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/security/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/OperationLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/OperationLogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/SearchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/TaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/TaskServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/OperationLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/OperationLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/SearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/util/FileNameUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/util/FileNameUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/util/Md5Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/util/Md5Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/util/PageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/util/PageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/util/StreamUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/util/StreamUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/dto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/entity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/enums.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/vo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/security/CurrentUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/security/JwtAuthenticationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/security/JwtTokenProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/AdminService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/AuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/FileService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/Impl/AdminServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/Impl/AuthServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/Impl/FileServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/Impl/OperationLogServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/Impl/SearchServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/Impl/TaskServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/Impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/OperationLogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/SearchService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/TaskService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/FileNameUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Md5Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/PageUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/StreamUtils.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="HTTP Request" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HttpClientOnboardingState"><![CDATA[{
+  "isOnboardingCommentShown": true
+}]]></component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0043947597058156" />
+      <entry key="MS500" value="1.3377435211339095" />
+      <entry key="S2" value="1.7623365751156497" />
+      <entry key="S5" value="1.8971368643378694" />
+      <entry key="S10" value="1.947173091012341" />
+      <entry key="S30" value="1.9820930841985753" />
+      <entry key="S60" value="2.002270073668317" />
+      <entry key="M2" value="2.319269947103913" />
+      <entry key="M5" value="4.986100636124162" />
+      <entry key="M10" value="10.830322312722714" />
+      <entry key="M15" value="16.70614656433884" />
+      <entry key="M30" value="29.395658224440666" />
+      <entry key="H1" value="41.199100991771154" />
+      <entry key="H2" value="49.47840418082573" />
+      <entry key="H4" value="54.41960244988038" />
+      <entry key="D1" value="59.021705983835005" />
+      <entry key="W1" value="59.859008735922856" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="3.265357429640126E-94" />
+      <entry key="S5" value="4.0324876106707674E-38" />
+      <entry key="S10" value="2.010744620242469E-19" />
+      <entry key="S30" value="6.497501365809556E-7" />
+      <entry key="S60" value="0.0010185339878436357" />
+      <entry key="M2" value="0.04358682462297457" />
+      <entry key="M5" value="0.44705667437448887" />
+      <entry key="M10" value="1.1729676131241367" />
+      <entry key="M15" value="1.8056697713709426" />
+      <entry key="M30" value="3.082619797859477" />
+      <entry key="H1" value="4.2257704346291565" />
+      <entry key="H2" value="5.012890984696618" />
+      <entry key="H4" value="5.47813501052949" />
+      <entry key="D1" value="5.908770535939438" />
+      <entry key="W1" value="5.986858625046472" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9633081229340198" />
+      <entry key="MS500" value="1.3238881842624213" />
+      <entry key="S2" value="1.7570954091028452" />
+      <entry key="S5" value="1.8948142393044562" />
+      <entry key="S10" value="1.9459697803056488" />
+      <entry key="S30" value="1.9816821704625653" />
+      <entry key="S60" value="2.002851099615623" />
+      <entry key="M2" value="2.35906401605009" />
+      <entry key="M5" value="5.419189939050345" />
+      <entry key="M10" value="11.985337973627772" />
+      <entry key="M15" value="18.49399418587172" />
+      <entry key="M30" value="32.46407092460073" />
+      <entry key="H1" value="45.41562771283675" />
+      <entry key="H2" value="54.485980058457656" />
+      <entry key="H4" value="59.89488167770187" />
+      <entry key="D1" value="64.92997061476875" />
+      <entry key="W1" value="65.84579432194525" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3FRJpefaB2HVsMZNDaKmxLdH592" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/AAAMyProjects/mycloud/server/src/Main.java",
+    "project.structure.last.edited": "全局库",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.sourceCode.JAVA",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gm222.server.ServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.25134.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="0288b8b1-d07c-4680-8c0d-876be2474fd5" name="更改" comment="" />
+      <created>1782032132524</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782032132524</updated>
+      <workItem from="1782032133557" duration="1754000" />
+      <workItem from="1782033900548" duration="2420000" />
+      <workItem from="1782036530582" duration="779000" />
+    </task>
+    <task id="LOCAL-00001" summary="框架">
+      <option name="closed" value="true" />
+      <created>1782033757700</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1782033757701</updated>
+    </task>
+    <task id="LOCAL-00002" summary="框架">
+      <option name="closed" value="true" />
+      <created>1782034275111</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782034275111</updated>
+    </task>
+    <task id="LOCAL-00003" summary="框架">
+      <option name="closed" value="true" />
+      <created>1782034380580</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1782034380580</updated>
+    </task>
+    <task id="LOCAL-00004" summary="框架">
+      <option name="closed" value="true" />
+      <created>1782034457273</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782034457273</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="框架" />
+    <option name="LAST_COMMIT_MESSAGE" value="框架" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
