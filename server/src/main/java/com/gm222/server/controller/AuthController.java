@@ -11,18 +11,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class AuthController {
     @RequestMapping("/register")
-    ApiResponse register (@RequestBody RegisterRequest registerRequest) {
-        ApiResponse apiResponse = new ApiResponse();
+    ApiResponse<?> register (@RequestBody RegisterRequest registerRequest) {
+        ApiResponse<?> apiResponse = new ApiResponse();
         return apiResponse;
     }
     @RequestMapping("/login")
-    ApiResponse login (@RequestBody LoginRequest loginRequest) {
-        ApiResponse apiResponse = new ApiResponse();
+    ApiResponse<?> login (@RequestBody LoginRequest loginRequest) {
+        ApiResponse<?> apiResponse = new ApiResponse();
         return apiResponse;
     }
     @RequestMapping("/logout")
-    ApiResponse logout() {
-        ApiResponse apiResponse = new ApiResponse();
+    ApiResponse<?> logout() {
+        ApiResponse<?> apiResponse = new ApiResponse();
         return apiResponse;
     }
 }
