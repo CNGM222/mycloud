@@ -1,7 +1,6 @@
 package com.gm222.server.model.dto;
 
-import java.util.UUID;
-
+//注册返回结果结构体
 public class RegisterResult {
     private String userId;
     private String username;

@@ -12,5 +12,14 @@ public class file_contents {
     private final String md5;
     private final LocalDateTime created_at;
     private final LocalDateTime updated_at;
+
+    public file_contents(long id, long fileId, long size, String md5, LocalDateTime createdAt, LocalDateTime updatedAt){
+        this.id = id;
+        this.file_id = fileId;
+        this.size = size;
+        this.md5 = md5;
+        this.created_at = createdAt;
+        this.updated_at = updatedAt;
+    }
 }
 
