@@ -1,4 +1,4 @@
-package com.gm222.server.model.dto;
+package com.gm222.server.model.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

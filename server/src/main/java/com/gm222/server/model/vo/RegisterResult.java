@@ -1,4 +1,4 @@
-package com.gm222.server.model.dto;
+package com.gm222.server.model.vo;
 
 //注册返回结果结构体
 public class RegisterResult {

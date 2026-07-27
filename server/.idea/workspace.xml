@@ -5,15 +5,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91417135-eea4-40eb-a453-a5361639e743" name="更改" comment="初步编码">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/CreatFolderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/MoveRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/RenameRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/RequestHead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/SearchRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/vo/FileItemVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/vo/TaskVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/vo/UserProfileVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/config/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/config/DataSourceConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/FolderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/FolderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/FileContentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/FileContentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/FileDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/FileDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/Impl/JdbcFileContentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/Impl/JdbcFileDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/Impl/JdbcOperationLogDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/Impl/JdbcTaskDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/Impl/JdbcUserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/OperationLogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/OperationLogDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/TaskDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/TaskDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/FileContentStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/vo/FileContentStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/LoginResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/vo/LoginResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/vo/PageResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/RegisterRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/RegisterResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/RegisterResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/entity/file_contents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/entity/file_contents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/RegisterResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/vo/RegisterResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/security/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/security/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/AdminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/AdminServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/AuthServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/FileServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/OperationLogServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/SearchServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/TaskServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/Impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/OperationLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/OperationLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/SearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../概要设计.md" beforeDir="false" afterPath="$PROJECT_DIR$/../概要设计.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../详细设计-后端设计.md" beforeDir="false" afterPath="$PROJECT_DIR$/../详细设计-后端设计.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../详细设计-接口设计.md" beforeDir="false" afterPath="$PROJECT_DIR$/../详细设计-接口设计.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../详细设计-数据库设计.md" beforeDir="false" afterPath="$PROJECT_DIR$/../详细设计-数据库设计.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../详细设计-流程图与类图.md" beforeDir="false" afterPath="$PROJECT_DIR$/../详细设计-流程图与类图.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../详细设计-测试设计.md" beforeDir="false" afterPath="$PROJECT_DIR$/../详细设计-测试设计.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../详细设计.md" beforeDir="false" afterPath="$PROJECT_DIR$/../详细设计.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../需求文档.md" beforeDir="false" afterPath="$PROJECT_DIR$/../需求文档.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,61 +88,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="5.016335367513681E-19" />
-      <entry key="MS500" value="2.1881511219956303E-4" />
-      <entry key="S2" value="0.1216770592443377" />
-      <entry key="S5" value="0.46070311505003886" />
-      <entry key="S10" value="0.950196627946431" />
-      <entry key="S30" value="2.8261091621810763" />
-      <entry key="S60" value="4.824549487730675" />
-      <entry key="M2" value="8.470877224598892" />
-      <entry key="M5" value="19.55630355167673" />
-      <entry key="M10" value="33.176639540216236" />
-      <entry key="M15" value="41.53302233866091" />
-      <entry key="M30" value="53.622315504323126" />
-      <entry key="H1" value="66.94528381206663" />
-      <entry key="H2" value="106.2777968019031" />
-      <entry key="H4" value="180.31902190644973" />
-      <entry key="D1" value="336.6762680182137" />
-      <entry key="W1" value="380.10080124348065" />
+      <entry key="MS100" value="1.0094230339261299" />
+      <entry key="MS500" value="1.4764078666172575" />
+      <entry key="S2" value="2.614074024216969" />
+      <entry key="S5" value="3.658217090935547" />
+      <entry key="S10" value="4.8664624441542035" />
+      <entry key="S30" value="8.535277505253159" />
+      <entry key="S60" value="14.021889703459022" />
+      <entry key="M2" value="23.715998343137233" />
+      <entry key="M5" value="46.82413720181113" />
+      <entry key="M10" value="80.50067489857022" />
+      <entry key="M15" value="109.402713979977" />
+      <entry key="M30" value="172.54359737656713" />
+      <entry key="H1" value="243.89909220962053" />
+      <entry key="H2" value="323.18509808010026" />
+      <entry key="H4" value="423.9812700580003" />
+      <entry key="D1" value="637.5251993713061" />
+      <entry key="W1" value="700.3900524455034" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000000003080607" />
-      <entry key="S5" value="1.0002035743174427" />
-      <entry key="S10" value="1.0194784024256798" />
-      <entry key="S30" value="1.4247330292997418" />
-      <entry key="S60" value="1.9739638726141457" />
-      <entry key="M2" value="2.922351568919013" />
-      <entry key="M5" value="5.826767113170895" />
-      <entry key="M10" value="8.795995461025754" />
-      <entry key="M15" value="10.36125326626473" />
-      <entry key="M30" value="12.412106881135289" />
-      <entry key="H1" value="15.037548663970226" />
-      <entry key="H2" value="24.213656774186195" />
-      <entry key="H4" value="41.34933985387175" />
-      <entry key="D1" value="76.60667250389727" />
-      <entry key="W1" value="86.25098071949363" />
+      <entry key="MS100" value="9.168372615997036E-102" />
+      <entry key="MS500" value="6.200953163274851E-21" />
+      <entry key="S2" value="8.873901684172448E-6" />
+      <entry key="S5" value="0.009533366139746908" />
+      <entry key="S10" value="0.09777659396280582" />
+      <entry key="S30" value="0.5575749208493787" />
+      <entry key="S60" value="1.3155130749640824" />
+      <entry key="M2" value="2.986391042402378" />
+      <entry key="M5" value="8.084430306249965" />
+      <entry key="M10" value="16.642066197633447" />
+      <entry key="M15" value="24.97489619285024" />
+      <entry key="M30" value="45.27175882437283" />
+      <entry key="H1" value="69.03271306967088" />
+      <entry key="H2" value="93.52701553704486" />
+      <entry key="H4" value="120.88257534051151" />
+      <entry key="D1" value="173.41876151621065" />
+      <entry key="W1" value="188.2751666662303" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="3.361909642972185E-10" />
-      <entry key="MS500" value="0.01294346608081925" />
-      <entry key="S2" value="0.45482471727969215" />
-      <entry key="S5" value="1.1004640484388386" />
-      <entry key="S10" value="1.754061558827864" />
-      <entry key="S30" value="4.129148628974487" />
-      <entry key="S60" value="6.704080073212347" />
-      <entry key="M2" value="11.298866519321512" />
-      <entry key="M5" value="25.28157996412825" />
-      <entry key="M10" value="41.8854255596502" />
-      <entry key="M15" value="51.8216974506417" />
-      <entry key="M30" value="65.98785854537248" />
-      <entry key="H1" value="81.9545194850592" />
-      <entry key="H2" value="130.4708578993701" />
-      <entry key="H4" value="221.65213044109802" />
-      <entry key="D1" value="413.27815196249776" />
-      <entry key="W1" value="466.35101521794724" />
+      <entry key="MS100" value="0.9471189115225164" />
+      <entry key="MS500" value="1.2574884166055276" />
+      <entry key="S2" value="2.265323065249728" />
+      <entry key="S5" value="3.4098186455566344" />
+      <entry key="S10" value="4.765774301470278" />
+      <entry key="S30" value="8.915518962399473" />
+      <entry key="S60" value="15.13756872480969" />
+      <entry key="M2" value="26.492805551044963" />
+      <entry key="M5" value="54.69685590717089" />
+      <entry key="M10" value="96.93927636606625" />
+      <entry key="M15" value="134.18710505217163" />
+      <entry key="M30" value="217.65980976638645" />
+      <entry key="H1" value="312.8199451984751" />
+      <entry key="H2" value="416.638766787032" />
+      <entry key="H4" value="544.8175395300516" />
+      <entry key="D1" value="810.9331355941636" />
+      <entry key="W1" value="888.6635458638458" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -160,8 +208,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.25134.95" />
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65" />
       </set>
     </attachedChunks>
   </component>
@@ -181,7 +229,15 @@
       <workItem from="1782533079165" duration="3502000" />
       <workItem from="1782538463136" duration="516000" />
       <workItem from="1782808861142" duration="3345000" />
-      <workItem from="1783000770291" duration="1417000" />
+      <workItem from="1783000770291" duration="1511000" />
+      <workItem from="1783059671114" duration="4031000" />
+      <workItem from="1783080210869" duration="1032000" />
+      <workItem from="1783234776833" duration="14000" />
+      <workItem from="1783759873078" duration="33000" />
+      <workItem from="1783759932238" duration="4141000" />
+      <workItem from="1785066432709" duration="140000" />
+      <workItem from="1785066586004" duration="3593000" />
+      <workItem from="1785111525219" duration="2937000" />
     </task>
     <task id="LOCAL-00001" summary="初步编码">
       <option name="closed" value="true" />
@@ -199,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782538941681</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="初步编码">
+      <option name="closed" value="true" />
+      <created>1783006224503</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783006224503</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

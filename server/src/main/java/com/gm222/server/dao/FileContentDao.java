@@ -1,4 +1,4 @@
 package com.gm222.server.dao;
 
-public interface FileContentDao {
+public class FileContentDao {
 }

@@ -1,4 +1,4 @@
 package com.gm222.server.service;
 
-public interface AdminService {
+public class AdminService {
 }
