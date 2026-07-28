@@ -1,11 +1,23 @@
 package com.gm222.server.model.entity;
 
-import lombok.Data;
+import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
-@Data
+@Entity
+@Table(name = "operation_logs")
+@Getter
+@Setter
+@NoArgsConstructor(force = true)
+@AllArgsConstructor
+@ToString
+@EqualsAndHashCode
 public class operation_logs {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id1;
+
     private final Integer id;
     private final Integer user_id;
     private final String action;
@@ -14,15 +26,4 @@ public class operation_logs {
     private final String client_type;
     private final String ip_address;
     private final LocalDateTime created_at;
-
-    public operation_logs(Integer id, Integer userId, String action, Integer targetId, String targetType, String clientType, String ipAddress, LocalDateTime createdAt) {
-        this.id = id;
-        user_id = userId;
-        this.action = action;
-        target_id = targetId;
-        target_type = targetType;
-        client_type = clientType;
-        ip_address = ipAddress;
-        created_at = createdAt;
-    }
 }

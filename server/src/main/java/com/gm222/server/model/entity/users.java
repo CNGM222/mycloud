@@ -1,11 +1,22 @@
 package com.gm222.server.model.entity;
 
 import com.gm222.server.model.enums.users.*;
-import lombok.Data;
+import jakarta.persistence.*;
+import lombok.*;
 
-@Data
+@Entity
+@Table(name = "users")
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@EqualsAndHashCode
 public class users {
-    private long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     private String username;
     private String email;
     private String password_hash;

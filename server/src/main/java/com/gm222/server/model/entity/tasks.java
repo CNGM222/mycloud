@@ -1,41 +1,50 @@
 package com.gm222.server.model.entity;
 
-import com.gm222.server.model.enums.tasks.*;
-import lombok.Data;
+
+import com.gm222.server.model.enums.tasks.Client_type;
+import com.gm222.server.model.enums.tasks.Status;
+import com.gm222.server.model.enums.tasks.Task_type;
+import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
-@Data
+@Entity
+@Table(name = "tasks")
+@Setter
+@Getter
+@NoArgsConstructor(force = true)
+@AllArgsConstructor
+@ToString(onlyExplicitlyIncluded = true)
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class tasks {
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private final long id;
-    private final long user_id;
-    private final long file_id;
-    private final Task_type task_type;
-    private final Client_type client_type;
-    private final Status status;
-    private final int progress;
-    private final String error_message;
-    private final LocalDateTime created_at;
-    private final LocalDateTime updated_at;
 
-    public tasks(long id,
-                 long userId,
-                 long fileId,
-                 Task_type taskType,
-                 Client_type clientType,
-                 Status status, int progress,
-                 String errorMessage,
-                 LocalDateTime createdAt,
-                 LocalDateTime updatedAt){
-        this.id = id;
-        this.user_id = userId;
-        this.file_id = fileId;
-        this.task_type = taskType;
-        this.client_type = clientType;
-        this.status = status;
-        this.progress = progress;
-        this.error_message = errorMessage;
-        this.created_at = createdAt;
-        this.updated_at = updatedAt;
-    }
+    @ToString.Include @EqualsAndHashCode.Include
+    private final long user_id;
+
+    @ToString.Include @EqualsAndHashCode.Include
+    private final long file_id;
+
+    @ToString.Include @EqualsAndHashCode.Include
+    private final Task_type task_type;
+
+    @ToString.Include @EqualsAndHashCode.Include
+    private final Client_type client_type;
+
+    @ToString.Include @EqualsAndHashCode.Include
+    private final Status status;
+
+    @ToString.Include @EqualsAndHashCode.Include
+    private final int progress;
+
+    @ToString.Include @EqualsAndHashCode.Include
+    private final String error_message;
+
+    @ToString.Include @EqualsAndHashCode.Include
+    private final LocalDateTime created_at;
+
+    @ToString.Include @EqualsAndHashCode.Include
+    private final LocalDateTime updated_at;
 }
