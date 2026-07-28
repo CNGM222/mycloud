@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class tasks {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private final long id;
+    private final Long id;
 
     @ToString.Include @EqualsAndHashCode.Include
     private final long user_id;
