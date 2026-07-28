@@ -1,12 +1,8 @@
 package com.gm222.server.controller;
 
-import com.gm222.server.model.dto.RequestHead;
 import com.gm222.server.model.vo.ApiResponse;
-import com.gm222.server.model.vo.UserProfileVo;
 import com.gm222.server.security.CurrentUser;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

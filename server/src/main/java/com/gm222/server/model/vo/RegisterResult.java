@@ -5,7 +5,7 @@ public class RegisterResult {
     private String userId;
     private String username;
 
-    public RegisterResult() {
+    public RegisterResult(Long id, String username) {
         this.userId = "114514";
         this.username = "aaa";
     }

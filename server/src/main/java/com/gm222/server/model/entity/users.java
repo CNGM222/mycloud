@@ -4,6 +4,8 @@ import com.gm222.server.model.enums.users.*;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Table(name = "users")
 @Setter
@@ -24,4 +26,6 @@ public class users {
     private long total_capacity;
     private long used_capacity;
     private Status status;
+    private LocalDateTime created_at;
+    private LocalDateTime updated_at;
 }

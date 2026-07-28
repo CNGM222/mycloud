@@ -1,11 +1,9 @@
 package com.gm222.server.controller;
 
 import com.gm222.server.model.dto.AdminRequest;
-import com.gm222.server.model.dto.RequestHead;
 import com.gm222.server.model.vo.ApiResponse;
 import com.gm222.server.security.JwtTokenProvider;
 import com.gm222.server.service.AdminService;
-import com.gm222.server.service.AuthService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
