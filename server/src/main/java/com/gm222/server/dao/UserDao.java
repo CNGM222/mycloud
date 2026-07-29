@@ -4,9 +4,16 @@ import com.gm222.server.model.entity.users;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Repository
 public interface UserDao extends JpaRepository<users, Long> {
     Optional<users> findByEmailAndUsername(String email, String username);
+
+    Optional<users> findByUsername(String username);
+
+    List<users> findByUsernameOrEmail(String username, String email);
+
+    Optional<users> findByEmail(String email);
 }

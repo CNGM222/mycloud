@@ -16,12 +16,11 @@ import java.time.LocalDateTime;
 public class operation_logs {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id1;
+    private Long id;
 
-    private final Integer id;
-    private final Integer user_id;
+    private final Long user_id;
     private final String action;
-    private final Integer target_id;
+    private final Long target_id;
     private final String target_type;
     private final String client_type;
     private final String ip_address;

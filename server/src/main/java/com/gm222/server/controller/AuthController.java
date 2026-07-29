@@ -21,7 +21,8 @@ public class AuthController {
     @PostMapping("/register")
     ApiResponse<?> register (@RequestBody RegisterRequest registerRequest) {
         RegisterResult register = authService.register(registerRequest);
-        return new ApiResponse<>(666,"test",register);
+        System.out.println(register);
+        return new ApiResponse<>(91,"Success",register);
     }
 
     @PostMapping("/login")

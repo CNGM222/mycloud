@@ -13,11 +13,12 @@ public enum ErrorCode {
     // ========== 用户模块 (2xxx) ==========
     USER_NOT_FOUND(2001, "用户不存在"),
     USER_ALREADY_EXISTS(2002, "用户已注册"),
-    PASSWORD_ERROR(2003, "用户名或密码错误"),
-    TOKEN_EXPIRED(2004, "登录凭证已过期，请重新登录"),
-    TOKEN_INVALID(2005, "无效的登录凭证"),
-    ACCOUNT_LOCKED(2006, "账户已被锁定，请联系管理员"),
-    VERIFICATION_CODE_ERROR(2007, "验证码错误或已失效"),
+    EMAIL_ALREADY_EXISTS(2003, "邮箱已注册"),
+    PASSWORD_ERROR(2004, "用户名或密码错误"),
+    TOKEN_EXPIRED(2005, "登录凭证已过期，请重新登录"),
+    TOKEN_INVALID(2006, "无效的登录凭证"),
+    ACCOUNT_LOCKED(2007, "账户已被锁定，请联系管理员"),
+    VERIFICATION_CODE_ERROR(2008, "验证码错误或已失效"),
 
     // ========== 文件与目录模块 (3xxx) ==========
     FILE_NOT_FOUND(3001, "文件不存在"),
