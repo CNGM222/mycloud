@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91417135-eea4-40eb-a453-a5361639e743" name="更改" comment="主键改为Long而不是long">
+    <list default="true" id="91417135-eea4-40eb-a453-a5361639e743" name="更改" comment="添加哈希Bean">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/exception/BusinessException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/exception/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/exception/ErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/RequestHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/dto/RequestHeader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/entity/users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/entity/users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/enums/users/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/enums/users/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/enums/users/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/enums/users/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/vo/RegisterResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/model/vo/RegisterResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gm222/server/service/AuthService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,61 +32,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000000000155183" />
-      <entry key="S10" value="1.000004450993095" />
-      <entry key="S30" value="1.0409215079670042" />
-      <entry key="S60" value="1.6111409206628688" />
-      <entry key="M2" value="3.8376253882857516" />
-      <entry key="M5" value="10.571674779070108" />
-      <entry key="M10" value="19.32515898337177" />
-      <entry key="M15" value="26.283721702988124" />
-      <entry key="M30" value="46.84186898098739" />
-      <entry key="H1" value="92.53309060981766" />
-      <entry key="H2" value="197.01099832250858" />
-      <entry key="H4" value="380.52883665702655" />
-      <entry key="D1" value="867.9238229667652" />
-      <entry key="W1" value="1035.7912372403205" />
+      <entry key="MS100" value="1.0000011341162824" />
+      <entry key="MS500" value="1.0647069168554353" />
+      <entry key="S2" value="1.546664643093298" />
+      <entry key="S5" value="2.1415941274959938" />
+      <entry key="S10" value="2.9033425415324174" />
+      <entry key="S30" value="4.584699719807886" />
+      <entry key="S60" value="5.53676436862144" />
+      <entry key="M2" value="6.208263949166117" />
+      <entry key="M5" value="7.979488733141729" />
+      <entry key="M10" value="13.669414691583027" />
+      <entry key="M15" value="20.04134566362893" />
+      <entry key="M30" value="40.0858967169639" />
+      <entry key="H1" value="84.80859123589437" />
+      <entry key="H2" value="187.67732190167976" />
+      <entry key="H4" value="371.4209401268733" />
+      <entry key="D1" value="868.6914204764018" />
+      <entry key="W1" value="1041.7254420579357" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.0198187898392654E-93" />
-      <entry key="S5" value="6.359298396126688E-38" />
-      <entry key="S10" value="2.5217653797546277E-19" />
-      <entry key="S30" value="6.371692502228837E-7" />
-      <entry key="S60" value="8.996822652504817E-4" />
-      <entry key="M2" value="0.04382885475239235" />
-      <entry key="M5" value="0.587447555668581" />
-      <entry key="M10" value="1.5819470344344533" />
-      <entry key="M15" value="2.749235376336789" />
-      <entry key="M30" value="9.053665136144701" />
-      <entry key="H1" value="26.313482706813954" />
-      <entry key="H2" value="62.35107754067875" />
-      <entry key="H4" value="119.08462843017706" />
-      <entry key="D1" value="255.12340055449323" />
-      <entry key="W1" value="299.5636330508179" />
+      <entry key="S2" value="6.713354048562795E-229" />
+      <entry key="S5" value="5.3799200362814466E-92" />
+      <entry key="S10" value="2.3194658709645838E-46" />
+      <entry key="S30" value="6.196539817768681E-16" />
+      <entry key="S60" value="2.8056686387564203E-8" />
+      <entry key="M2" value="2.4475621682578795E-4" />
+      <entry key="M5" value="0.07374940904982868" />
+      <entry key="M10" value="0.5605142529864637" />
+      <entry key="M15" value="1.376602027465403" />
+      <entry key="M30" value="6.406527106266043" />
+      <entry key="H1" value="22.13489432827696" />
+      <entry key="H2" value="57.18650083080652" />
+      <entry key="H4" value="114.04611248802676" />
+      <entry key="D1" value="253.29177748889813" />
+      <entry key="W1" value="299.25544412807835" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.001994164308021862" />
-      <entry key="MS500" value="0.28837140126500566" />
-      <entry key="S2" value="0.7328043639403782" />
-      <entry key="S5" value="0.8830701785097522" />
-      <entry key="S10" value="0.9397225351315986" />
-      <entry key="S30" value="1.0203071039281721" />
-      <entry key="S60" value="1.6010183480077678" />
-      <entry key="M2" value="3.8736393309244765" />
-      <entry key="M5" value="11.148341462275598" />
-      <entry key="M10" value="20.89433681984533" />
-      <entry key="M15" value="29.017674545785823" />
-      <entry key="M30" value="55.868132235627606" />
-      <entry key="H1" value="118.80659199028831" />
-      <entry key="H2" value="259.3152445705463" />
-      <entry key="H4" value="499.56896578648207" />
-      <entry key="D1" value="1123.03142933137" />
-      <entry key="W1" value="1335.3522241507803" />
+      <entry key="MS100" value="0.9659374320286587" />
+      <entry key="MS500" value="1.0574415939565835" />
+      <entry key="S2" value="1.5441756727851337" />
+      <entry key="S5" value="2.14025984059842" />
+      <entry key="S10" value="2.9024443321430047" />
+      <entry key="S30" value="4.584211073227022" />
+      <entry key="S60" value="5.53646235333131" />
+      <entry key="M2" value="6.208294154591692" />
+      <entry key="M5" value="8.051810508987732" />
+      <entry key="M10" value="14.225366414971473" />
+      <entry key="M15" value="21.41026971050926" />
+      <entry key="M30" value="46.47302082066087" />
+      <entry key="H1" value="106.90984676897573" />
+      <entry key="H2" value="244.82086723834055" />
+      <entry key="H4" value="485.42443446191965" />
+      <entry key="D1" value="1121.967516894896" />
+      <entry key="W1" value="1340.9782427290206" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -195,7 +183,7 @@
       <workItem from="1785066586004" duration="3593000" />
       <workItem from="1785111525219" duration="5533000" />
       <workItem from="1785210010304" duration="16391000" />
-      <workItem from="1785306553937" duration="1929000" />
+      <workItem from="1785306553937" duration="2155000" />
     </task>
     <task id="LOCAL-00001" summary="初步编码">
       <option name="closed" value="true" />
@@ -245,7 +233,31 @@
       <option name="project" value="LOCAL" />
       <updated>1785219752734</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="错误处理">
+      <option name="closed" value="true" />
+      <created>1785308528172</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1785308528172</updated>
+    </task>
+    <task id="LOCAL-00008" summary="完善">
+      <option name="closed" value="true" />
+      <created>1785308557792</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1785308557792</updated>
+    </task>
+    <task id="LOCAL-00009" summary="添加哈希Bean">
+      <option name="closed" value="true" />
+      <created>1785308577851</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1785308577851</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +281,10 @@
     <MESSAGE value="初步编码" />
     <MESSAGE value="改用Jpa进行数据库交互" />
     <MESSAGE value="主键改为Long而不是long" />
-    <option name="LAST_COMMIT_MESSAGE" value="主键改为Long而不是long" />
+    <MESSAGE value="错误处理" />
+    <MESSAGE value="完善" />
+    <MESSAGE value="添加哈希Bean" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加哈希Bean" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
