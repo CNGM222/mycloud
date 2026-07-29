@@ -5,6 +5,6 @@ import lombok.Data;
 @Data
 public class RequestHeader {
     private String Authorization;
-    private String clientType;
-    private String ip;
+    private String ClientType;
+    //private String ip;
 }

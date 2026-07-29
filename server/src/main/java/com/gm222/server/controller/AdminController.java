@@ -19,7 +19,7 @@ public class AdminController {
 
     @GetMapping("/users")
     public ApiResponse<?> listUsers(
-            @RequestHeader RequestHead header,
+            @RequestHeader RequestHeader header,
             @RequestParam(required = false) String keyword,
             @RequestParam(defaultValue = "1") Long page,
             @RequestParam(defaultValue = "15") Long size) {
@@ -28,14 +28,14 @@ public class AdminController {
 
     @GetMapping("/user/{id}")
     public ApiResponse<?> getUser(
-            @RequestHeader RequestHead header,
+            @RequestHeader RequestHeader header,
             @PathVariable Long id) {
         return null;
     }
 
     @PutMapping("/userstatus/{id}")
     public ApiResponse<?> updateUserStatus(
-            @RequestHeader RequestHead header,
+            @RequestHeader RequestHeader header,
             @PathVariable Long id,
             @RequestBody AdminRequest request) {
         return null;
@@ -43,7 +43,7 @@ public class AdminController {
 
     @PutMapping("/usercapacity/{id}")
     public ApiResponse<?> updateUserCapacity(
-            @RequestHeader RequestHead header,
+            @RequestHeader RequestHeader header,
             @PathVariable Long id,
             @RequestBody AdminRequest request) {
         return null;
@@ -51,13 +51,13 @@ public class AdminController {
 
     @GetMapping("/storage")         //查看存储情况
     public ApiResponse<?> storage(
-            @RequestHeader RequestHead header) {
+            @RequestHeader RequestHeader header) {
         return null;
     }
 
     @RequestMapping("/logs")
     public ApiResponse<?> logs(
-            @RequestHeader RequestHead header) {
+            @RequestHeader RequestHeader header) {
         return null;
     }
 }

@@ -22,10 +22,10 @@ public class users {
     private String username;
     private String email;
     private String password_hash;
-    private Role role;
+    private String role;
     private long total_capacity;
     private long used_capacity;
-    private Status status;
+    private String status;
     private LocalDateTime created_at;
     private LocalDateTime updated_at;
 }

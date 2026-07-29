@@ -2,22 +2,22 @@ package com.gm222.server.model.vo;
 
 //注册返回结果结构体
 public class RegisterResult {
-    private String userId;
+    private Long userId;
     private String username;
 
-    public RegisterResult(Long id, String username) {
-        this.userId = "114514";
+    public RegisterResult() {
+        this.userId = 114514L;
         this.username = "aaa";
     }
-    public RegisterResult(String userId, String username) {
+    public RegisterResult(Long userId, String username) {
         this.userId = userId;
         this.username = username;
     }
 
-    public String getUserId() {
+    public Long getUserId() {
         return userId;
     }
-    public void setUserId(String userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 
