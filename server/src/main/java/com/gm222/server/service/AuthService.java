@@ -46,7 +46,7 @@ public class AuthService {
 
         //写入用户登录信息
         LocalDateTime now = LocalDateTime.now();
-        userDao.save(new users(null, request.getUsername(), request.getEmail(), request.getPassword(), "user", 10000, 0, "normal",now,now));
+        userDao.save(new users(null, request.getUsername(), request.getEmail(), passwordEncoder.encode(request.getPassword()), "user", 10000, 0, "normal",now,now));
         Optional<users> result = userDao.findByEmailAndUsername(request.getEmail(), request.getUsername());
         if(result.isEmpty()){
             throw new BusinessException(ErrorCode.SYSTEM_ERROR);
